@@ -1,5 +1,5 @@
-o<p align="center">
-  <img src="Banner.png" alt="Synaptic Visualizer Banner" width="100%">
+<p align="center">
+  <img src="assets/Banner.png" alt="Synaptic Visualizer Banner" width="100%">
 </p>
 
 # 🧠 Synaptic Visualizer
@@ -41,10 +41,10 @@ An interactive educational simulator for visualizing neuronal communication, syn
 
 ## 🛠️ Credits
 
-* **Replit**: Initial development and scaffolding.
-* **OpenAI**: Scientific validation and debugging.
-* **Claude Sonnet 5.0**: Architecture and implementation.
-* **Vercel** : Hosting and deployment.
+* **Replit** — Initial development and scaffolding.
+* **OpenAI** — Scientific validation and debugging.
+* **Claude Sonnet 5.0** — Architecture and implementation.
+* **Vercel** — Hosting and deployment.
 
 ---
 
