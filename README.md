@@ -1,89 +1,61 @@
-# 🧠 Synapse Simulation
+<p align="center">
+  <img src="Banner.png" alt="Synaptic Visualizer Banner" width="100%">
+</p>
 
-Visual exploration of how neurons communicate through animated synapses.
+# 🧠 Synaptic Visualizer
 
----
+**Interactive Neuronal Synapse Simulator**
 
-## ✨ Live Demo
-
-[→ Open Visualizer](https://synaptic-mapper.netlify.app/)
-
----
-
-## 📸 Screenshots
-
-![Synapse Visualizer](attached_assets/1778330142962_1779759792815.png)
-
-![Animation Demo](attached_assets/Skreenup_1780399865234.png)
-
-![Controls](attached_assets/Skreenup_1780400009180.png)
+An interactive educational simulator for visualizing neuronal communication, synaptic transmission, and neurotransmitter activity.
 
 ---
 
-## 🎯 What It Does
+## ✨ Features
 
-- 🎨 Watch neurons fire in real-time
-- ⚡ Visualize synaptic signal transmission
-- 🎮 Interactive animation controls
-
----
-
-## 🚀 Quick Start
-
-```bash
-pnpm install
-pnpm --filter @workspace/synapse-viz-app run dev
-```
-
-**Environment Setup:**
-```
-DATABASE_URL=postgresql://user:pass@localhost/synapse_sim
-```
+* **Synaptic Transmission:** Visualize signal transmission between neurons.
+* **Neurotransmitters:** Explore neurotransmitter release and receptor interaction.
+* **Interactive Visualization:** Explore the synapse through a dynamic interface.
+* **Educational:** Designed around core NCERT Biology concepts.
+* **Responsive:** Supports desktop, tablet, and mobile devices.
 
 ---
 
-## 🛠️ Tech Stack
+## 🧠 Learning Objectives
 
-```
-Frontend  → React 19 + Vite
-Backend   → Express.js + Node 24
-Database  → PostgreSQL + Drizzle ORM
-Language  → TypeScript
-```
+* Understand synaptic structure and function.
+* Visualize neuronal signal transmission.
+* Understand neurotransmitter–receptor interactions.
+* Explore the role of the synaptic cleft in neural communication.
 
 ---
 
-## 📁 Structure
+## 🚀 Build & Hosting
 
-```
-artifacts/    Apps (UI & Backend)
-lib/          Shared Libraries
-scripts/      Utilities
-```
-
----
-
-## 💻 Commands
-
-| Command | Purpose |
-|---------|---------|
-| `pnpm run build` | Build everything |
-| `pnpm run typecheck` | Check for errors |
+* **Repository:** GitHub
+* **Hosting:** Vercel
+* **Frontend:** React + TypeScript
+* **Build Tool:** Vite
+* **Package Manager:** pnpm
 
 ---
 
-## ⚙️ For Developers
+## 🛠️ Credits
 
-```bash
-# Start visualizer
-pnpm --filter @workspace/synapse-viz-app run dev
-
-# Start backend API
-pnpm --filter @workspace/api-server run dev
-```
+* **Replit** — Initial development and scaffolding.
+* **OpenAI** — Scientific validation and debugging.
+* **Claude Sonnet 5.0** — Architecture and implementation.
+* **Vercel** — Hosting and deployment.
 
 ---
 
-## 📝 License
+## 👤 Author
 
-MIT
+**Draven Ashcroft**
+
+*M.Sc. Ag. Entomology · ASRB NET · DIPS Chain of Institutions*
+
+---
+
+## 📜 License
+
+GPL-3.0
