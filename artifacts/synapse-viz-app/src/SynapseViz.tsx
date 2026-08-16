@@ -363,9 +363,12 @@ export function SynapseViz() {
       <header className="synapse-header" aria-label="Synaptic Visualizer">
         <div className="synapse-header__content">
           <div className="synapse-header__icon" aria-hidden="true">
-            <BrainCircuit size="clamp(15px, 2.3vw, 20px)" strokeWidth={1.6} />
+            <BrainCircuit size={22} strokeWidth={1.6} />
           </div>
-          <span className="synapse-header__title">SYNAPTIC VISUALIZER</span>
+          <div className="synapse-header__copy">
+            <span className="synapse-header__title">SYNAPTIC VISUALIZER</span>
+            <span className="synapse-header__subtitle">Synaptic Transmission Simulator</span>
+          </div>
         </div>
       </header>
 

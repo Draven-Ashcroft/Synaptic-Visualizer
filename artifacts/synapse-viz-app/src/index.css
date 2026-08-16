@@ -73,7 +73,7 @@
   width: 100%;
   min-width: 0;
   box-sizing: border-box;
-  padding: clamp(10px, 1.5vw, 16px) clamp(14px, 3vw, 32px) clamp(9px, 1.3vw, 14px);
+  padding: clamp(13px, 2vw, 20px) clamp(14px, 3vw, 32px) clamp(12px, 1.8vw, 18px);
   border-bottom: 1px solid rgba(139, 157, 255, 0.08);
   background: rgba(5, 8, 16, 0.94);
 }
@@ -84,35 +84,54 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: clamp(8px, 1.2vw, 12px);
+  gap: clamp(10px, 1.6vw, 16px);
 }
 
 .synapse-header__icon {
   flex: 0 0 auto;
-  width: clamp(25px, 3.4vw, 31px);
-  height: clamp(25px, 3.4vw, 31px);
+  width: clamp(38px, 5vw, 50px);
+  height: clamp(38px, 5vw, 50px);
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid rgba(108, 194, 255, 0.48);
+  border: 1px solid rgba(108, 194, 255, 0.42);
   border-radius: 999px;
   color: #a8d9ff;
-  background: rgba(55, 126, 198, 0.12);
+  background: rgba(55, 126, 198, 0.1);
   box-shadow:
-    0 0 8px rgba(73, 173, 255, 0.28),
-    0 0 22px rgba(39, 125, 211, 0.14);
+    0 0 10px rgba(73, 173, 255, 0.3),
+    0 0 30px rgba(39, 125, 211, 0.16);
+}
+
+.synapse-header__copy {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 5px;
 }
 
 .synapse-header__title {
   min-width: 0;
   overflow: hidden;
-  color: rgba(225, 235, 255, 0.9);
-  font-size: clamp(0.68rem, 1.6vw, 0.88rem);
-  font-weight: 600;
-  line-height: 1;
-  letter-spacing: clamp(0.12em, 0.45vw, 0.2em);
+  color: rgba(245, 247, 255, 0.94);
+  font-size: clamp(1.08rem, 2.8vw, 1.55rem);
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: clamp(0.03em, 0.16vw, 0.08em);
   text-align: left;
   text-overflow: ellipsis;
   white-space: nowrap;
-  text-shadow: 0 0 10px rgba(151, 198, 255, 0.12);
+  text-shadow: 0 0 12px rgba(151, 198, 255, 0.12);
+}
+
+.synapse-header__subtitle {
+  overflow: hidden;
+  color: rgba(190, 198, 218, 0.62);
+  font-size: clamp(0.7rem, 1.6vw, 0.92rem);
+  font-weight: 400;
+  line-height: 1.15;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
