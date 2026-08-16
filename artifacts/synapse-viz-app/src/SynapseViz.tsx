@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState, useCallback } from 'react';
-import { Play, Pause, RotateCcw, ChevronLeft, ChevronRight } from 'lucide-react';
+import { BrainCircuit, Play, Pause, RotateCcw, ChevronLeft, ChevronRight } from 'lucide-react';
 
 /* ─────────────────────────────────────────────────────────────────
    STAGE DATA
@@ -359,8 +359,18 @@ export function SynapseViz() {
 
   /* ── render ────────────────────────────────────────────────── */
   return (
-    <div className="w-full flex overflow-hidden"
-      style={{ height: '100dvh', background: 'radial-gradient(ellipse at 30% 20%, #0c1428 0%, #050810 70%)', fontFamily: 'Inter, system-ui, sans-serif' }}>
+    <div className="synapse-app-shell">
+      <header className="synapse-header" aria-label="Synaptic Visualizer">
+        <div className="synapse-header__content">
+          <div className="synapse-header__icon" aria-hidden="true">
+            <BrainCircuit size="clamp(15px, 2.3vw, 20px)" strokeWidth={1.6} />
+          </div>
+          <span className="synapse-header__title">SYNAPTIC VISUALIZER</span>
+        </div>
+      </header>
+
+      <div className="w-full flex flex-1 min-h-0 overflow-hidden"
+        style={{ background: 'radial-gradient(ellipse at 30% 20%, #0c1428 0%, #050810 70%)', fontFamily: 'Inter, system-ui, sans-serif' }}>
 
       {/* ── LEFT: SVG ─────────────────────────────────────────── */}
       <div className="flex-1 flex items-center justify-center relative overflow-hidden">
@@ -1818,6 +1828,7 @@ export function SynapseViz() {
             </button>
           </div>
         </div>
+      </div>
       </div>
     </div>
   );
