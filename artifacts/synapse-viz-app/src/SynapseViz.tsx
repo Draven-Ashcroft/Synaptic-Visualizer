@@ -372,11 +372,11 @@ export function SynapseViz() {
         </div>
       </header>
 
-      <div className="w-full flex flex-1 min-h-0 overflow-hidden"
+      <div className="w-full flex flex-1 min-h-0 min-w-0 overflow-hidden"
         style={{ background: 'radial-gradient(ellipse at 30% 20%, #0c1428 0%, #050810 70%)', fontFamily: 'Inter, system-ui, sans-serif' }}>
 
       {/* ── LEFT: SVG ─────────────────────────────────────────── */}
-      <div className="flex-1 flex items-center justify-center relative overflow-hidden">
+      <div className="flex-1 min-w-0 flex items-center justify-center relative overflow-hidden">
         {/* subtle dot grid */}
         <div className="absolute inset-0 pointer-events-none" style={{
           backgroundImage: 'radial-gradient(circle, rgba(255,255,255,0.025) 1px, transparent 1px)',
@@ -1296,15 +1296,17 @@ export function SynapseViz() {
       </div>
 
       {/* ── RIGHT: Info + Controls panel ──────────────────────── */}
-      <div className="flex flex-col min-h-0 overflow-hidden"
+      <div className="flex flex-col flex-shrink-0 min-h-0 overflow-hidden"
         style={{ width: 330, minWidth: 330, background: 'rgba(255,255,255,0.022)', borderLeft: '1px solid rgba(255,255,255,0.055)' }}>
 
         {/* Scrollable top section */}
-        <div className="flex-1 overflow-y-auto" style={{ padding: '28px 24px 16px' }}>
-          <div className="text-xs font-semibold tracking-widest uppercase mb-1 transition-colors duration-500"
-            style={{ color: stage.color }}>Neuroscience · Microscopic</div>
-          <h1 className="text-xl font-bold text-white/90 leading-snug mb-4">
-            Synaptic<br />Transmission
+        <div className="flex-1 min-h-0 overflow-y-auto overscroll-contain"
+          style={{
+            padding: '16px 24px calc(96px + env(safe-area-inset-bottom))',
+            WebkitOverflowScrolling: 'touch',
+          }}>
+          <h1 className="text-lg font-bold text-white/90 leading-snug mb-3 whitespace-nowrap">
+            Synaptic Transmission
           </h1>
 
           {/* ── Mini neuron context map + stage progress ── */}
@@ -1775,7 +1777,7 @@ export function SynapseViz() {
         </div>
 
         {/* Playback controls — pinned to bottom, never cropped */}
-        <div className="flex-shrink-0" style={{ padding: '16px 24px 24px', borderTop: '1px solid rgba(255,255,255,0.055)' }}>
+        <div className="flex-shrink-0" style={{ padding: '12px 24px calc(16px + env(safe-area-inset-bottom))', borderTop: '1px solid rgba(255,255,255,0.055)' }}>
           {/* Keyboard hint */}
           <div className="flex items-center justify-center gap-3 mb-3">
             {[['Space', 'Play/Pause'], ['←→', 'Step']].map(([key, label]) => (
